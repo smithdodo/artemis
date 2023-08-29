@@ -7,7 +7,7 @@ use tokio_stream::StreamExt;
 
 use crate::collectors::block_collector::NewBlock;
 use crate::collectors::opensea_order_collector::OpenseaOrder;
-use crate::executors::flashbots_executor::FlashbotsBundle;
+// use crate::executors::flashbots_executor::FlashbotsBundle;
 use crate::executors::mempool_executor::SubmitTxToMempool;
 
 /// A stream of events emitted by a [Collector](Collector).
@@ -103,6 +103,6 @@ pub enum Events {
 
 /// Convenience enum containing all the actions that can be executed by executors.
 pub enum Actions {
-    FlashbotsBundle(FlashbotsBundle),
+    // FlashbotsBundle(FlashbotsBundle),
     SubmitTxToMempool(SubmitTxToMempool),
 }
